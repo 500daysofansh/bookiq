@@ -1,0 +1,32 @@
+# ─── Core Framework ───────────────────────────────────────────────────────────
+Django==4.2.17
+djangorestframework==3.15.2
+django-cors-headers==4.4.0
+
+# ─── Database ─────────────────────────────────────────────────────────────────
+# SQLite is used by default (zero config, works out of the box)
+# For MySQL (production), uncomment and install:
+#   mysqlclient==2.2.4
+# Then uncomment the MySQL config block in bookiq_backend/settings.py
+
+# ─── Vector Store ─────────────────────────────────────────────────────────────
+# Built-in TF-IDF vector store is used by default (no extra install needed)
+# For ChromaDB (optional upgrade):
+#   chromadb==0.6.3
+# For FAISS (optional upgrade):
+#   faiss-cpu==1.9.0
+
+# ─── Web Scraping ─────────────────────────────────────────────────────────────
+selenium==4.18.1
+webdriver-manager==4.0.1
+beautifulsoup4==4.12.3
+requests==2.32.3
+
+# ─── AI / LLM ─────────────────────────────────────────────────────────────────
+openai==1.59.6          # OpenAI-compatible client used for OpenRouter API
+# Model: openrouter/free — auto-selects best available free model
+# API key is configured in bookiq_backend/settings.py
+
+# ─── Utilities ────────────────────────────────────────────────────────────────
+python-dotenv==1.0.1
+numpy==2.4.3
